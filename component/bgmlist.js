@@ -14,7 +14,8 @@ import { getBmgs, filterBgm } from "../Actions/bgmAction";
 export default class Bgmlist extends Component {
   constructor(props) {
     super(props);
-    this.props.dispatch(getBmgs("/studio/assets/sounds/"));
+    //bgm取得""にURLを入れます
+    this.props.dispatch(getBmgs(""));
     this.onJenreSelect = this.onJenreSelect.bind(this);
   }
 

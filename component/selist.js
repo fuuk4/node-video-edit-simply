@@ -14,7 +14,8 @@ import { getSes, filterSe } from "../Actions/seAction";
 export default class Selist extends Component {
   constructor(props) {
     super(props);
-    this.props.dispatch(getSes("/studio/assets/sounds/"));
+    //SEを取得""にURLを入れます
+    this.props.dispatch(getSes(""));
     this.onJenreSelect = this.onJenreSelect.bind(this);
   }
 

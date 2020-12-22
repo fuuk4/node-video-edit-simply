@@ -97,8 +97,6 @@ export default class timeLineVis extends Component {
     }
 
     this.timeline = new Vis(container, [], [], options);
-    // this.timeline.addCustomTime(new Date(1970, 0, 1, 0, 0, 0, 0), "linebar");
-    // this.timeline.setCustomTimeTitle("00:00:00,000", "linebar");
 
     this.timeline.on("select", this.onSelect);
     this.timeline.on("timechange", this.onMoveLinebar);
